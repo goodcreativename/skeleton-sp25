@@ -5,7 +5,7 @@
  *
  * @author Erik Kizior
  */
-public class JavaExercizes {
+public class JavaExercises {
 
     /**
      * Prints a right-aligned triangle of stars ('*') with 5 lines.
