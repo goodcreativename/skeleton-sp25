@@ -5,14 +5,18 @@
  *
  * @author Erik Kizior
  */
-public class JavaExercises {
+public class JavaExercizes {
 
     /**
      * Prints a right-aligned triangle of stars ('*') with 5 lines.
      * The first row contains 1 star, the second 2 stars, and so on.
      */
     public static void starTriangle() {
-        // TODO: Fill in this function
+        System.out.println("    *");
+        System.out.println("   **");
+        System.out.println("  ***");
+        System.out.println(" ****");
+        System.out.println("*****");
     }
 
     /**
@@ -20,7 +24,11 @@ public class JavaExercises {
      * Example: printIndexed("hello") -> h4e3l2l1o0
      */
     public static void printIndexed(String s) {
-        // TODO: Fill in this function
+        String out = "";
+        for(int i = 0; i < s.length(); i++){
+            out += (s.charAt(i) + Integer.toString(s.length() - i - 1));
+        }
+        System.out.println(out);
     }
 
     /**
@@ -28,8 +36,12 @@ public class JavaExercises {
      * Example: stutter("hello") -> "hheelllloo"
      */
     public static String stutter(String s) {
-        // TODO: Fill in this function
-        return null;
+        String out = "";
+        for(int i = 0; i < s.length(); i++){
+            out += s.charAt(i);
+            out += s.charAt(i);
+        }
+        return out;
     }
 
     /**
@@ -42,7 +54,22 @@ public class JavaExercises {
      *   0 if the point lies on an axis.
      */
     public static int quadrant(int x, int y) {
-        // TODO: Fill in this function
+        if(x > 0){
+            if(y > 0){
+                return 1;
+            }
+            if(y < 0){
+                return 4;
+            }
+        }
+        else if(x < 0){
+            if(y > 0){
+                return 2;
+            }
+            if(y < 0){
+                return 3;
+            }
+        }
         return 0;
     }
 
