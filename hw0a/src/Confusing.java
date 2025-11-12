@@ -5,7 +5,7 @@
  * @author Erik Kizior
  */
 
-// TODO: What is the output of the following program?
+// What is the output of the following program?
 public class Confusing {
     public static void method1() {
         System.out.println("I am method 1.");
